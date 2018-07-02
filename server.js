@@ -23,9 +23,9 @@
 
   app.post("/update", function(req, res) {
     console.log(req.body);
-    return res.status(200);
+    return res.send('success');
 });
 
 
-  app.listen(process.env.PORT || 3120);
+  app.listen(process.env.PORT || 5000);
   console.log("Listening on localhost:3120");
