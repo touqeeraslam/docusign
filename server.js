@@ -26,5 +26,5 @@
 });
 
 
-  app.listen("3120");
+  app.listen(process.env.PORT || 3120);
   console.log("Listening on localhost:3120");
