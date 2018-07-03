@@ -20,6 +20,7 @@
 
   app.use(cors());
   // app.use(bodyParser.json());
+  app.use(bodyParser.text());
   app.use(bodyParser.urlencoded({
     extended: false
   }));
@@ -33,4 +34,4 @@
 
 
   app.listen(process.env.PORT || 5000);
-  console.log("Listening on localhost:3120");
+  console.log("Listening on localhost:5000");
