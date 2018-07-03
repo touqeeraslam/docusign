@@ -29,7 +29,9 @@
 
 
   app.post("/update", function(req, res) {
-    console.log(req.body.docusignenvelopeinformation);
+    // console.log(req.body.docusignenvelopeinformation);
+    // console.log(req.body.docusignenvelopeinformation.documentpdfs);
+    console.log(req.body.docusignenvelopeinformation.documentpdfs.documentpdf.envelopestatus.completed);
    
     return res.send('success');
 });
