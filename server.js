@@ -5,6 +5,7 @@
   const cors = require("cors");
   const bodyParser = require("body-parser");
   const express = require('express');
+  var parseString = require('xml2js').parseString;
 
   // ------------------------------
   // Create express app
@@ -28,7 +29,8 @@
 
 
   app.post("/update", function(req, res) {
-    console.log(req.body);
+    console.log(req.body.docusignenvelopeinformation);
+   
     return res.send('success');
 });
 
