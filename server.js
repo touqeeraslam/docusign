@@ -32,7 +32,7 @@
     // console.log(req.body.docusignenvelopeinformation);
     // console.log(req.body.docusignenvelopeinformation.documentpdfs);
     console.log("this is the required console : ",req.body.docusignenvelopeinformation.documentpdfs);
-    console.log("this is the required console : ",req.body.docusignenvelopeinformation.documentpdfs[0]);
+    console.log("this is the required console : ",req.body.docusignenvelopeinformation.documentpdfs[0].documentpdf[0].pdfbytes);
    
     return res.send('success');
 });
