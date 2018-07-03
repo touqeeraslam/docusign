@@ -31,7 +31,7 @@
   app.post("/update", function(req, res) {
     // console.log(req.body.docusignenvelopeinformation);
     // console.log(req.body.docusignenvelopeinformation.documentpdfs);
-    console.log(req.body.docusignenvelopeinformation.documentpdfs.documentpdf.envelopestatus.completed);
+    console.log("this is the required console : ",req.body.docusignenvelopeinformation.documentpdfs.documentpdf);
    
     return res.send('success');
 });
