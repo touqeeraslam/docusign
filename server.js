@@ -10,11 +10,16 @@
   // Create express app
   // ------------------------------
   const app = express();
-  // ------------------------------
+  // --------------------
+  const xmlparser = require('express-xml-bodyparser');
+  
   // Load the middlewares
   // ------------------------------
+  app.use(xmlparser());
+
+
   app.use(cors());
-  app.use(bodyParser.json());
+  // app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({
     extended: false
   }));
